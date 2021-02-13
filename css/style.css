@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.margin1 {
+    /* padding: 1%; */
+    border: yellow solid;
+}
+
+.margin2 {
+    border: green solid;
+}
+
+.margin3 {
+    border: red solid;
+}
+
+.float {
+    /* float: left; */
+    z-index: 100;
+    position: absolute;
+}
+
+
+/* ul,
+li,
+tr,
+table,
+td {
+    border: red solid;
+} */
+
+
+/* .canva_sec {
+    width: auto;
+    /* margin-top: -10%; */
+
+background: yellow;
+
+}
