@@ -52,7 +52,8 @@ body.dark .skill-card--container {
 }
 
 body.dark .image {
-  border: #5b7dbc7e solid 7.5px;
+  border: #22bced solid 1px;
+  padding: 0.4rem;
   background-color: #5b7dbc7e;
 }
 
@@ -743,7 +744,7 @@ body.dark .skill-card--container li {
 .computer-dark {
   width: 90%;
   margin-left: calc(50% - 145px);
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   min-width: 120px;
   max-width: 300px;
 }
@@ -778,6 +779,160 @@ body.dark .skill-card--container li {
 
 .border {
   border: solid purple;
+}
+
+.scroll_courses-home {
+  width: 100%;
+  height: 72vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.scroll_courses-home article div {
+  width: 80%;
+  min-width: 100px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.scroll_courses-home article {
+  width: 80%;
+  color: #00313f;
+  margin: 0 auto;
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #00313f;
+}
+
+body.dark .scroll_courses-home article {
+  color: #FEFEFE;
+}
+
+.scroll_courses-home article p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.scroll_courses-home article h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.scroll_courses-home article small {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.img_courses {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  background-color: #FEFEFE;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.24);
+}
+
+body.dark footer {
+  background-color: #222222;
+}
+
+footer .container_info {
+  font-size: 1.5rem;
+  height: 3rem;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+footer .container_social {
+  flex-grow: 2;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+footer h4 {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #00313f;
+}
+
+body.dark footer h4 {
+  color: #5b7dbc;
+}
+
+footer article a {
+  margin: 0.3rem;
+}
+
+footer .facebook {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/facebook.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+body.dark footer .facebook {
+  background-image: url(../assets/imgs/logo/facebookW.png);
+}
+
+footer .instagram {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/instagram.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+body.dark footer .instagram {
+  background-image: url(../assets/imgs/logo/instagramW.png);
+}
+
+footer .github {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/github.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+body.dark footer .github {
+  background-image: url(../assets/imgs/logo/githubW.png);
+}
+
+footer .linkedin {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/linkedin.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+body.dark footer .linkedin {
+  background-image: url(../assets/imgs/logo/linkedinW.png);
 }
 
 .theme {
