@@ -626,6 +626,8 @@ a {
     overflow: scroll;
     overflow-x: hidden;
     margin-bottom: 1px;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
 }
 
 .experience-scroll--card h4 {
