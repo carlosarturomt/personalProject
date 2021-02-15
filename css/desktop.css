@@ -1,0 +1,16 @@
+section .main-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    width: 100px !important;
+}
+
+section aside .header--image-container {
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+section article .header--title-container {
+    justify-content: space-around;
+    flex-grow: 2;
+}
