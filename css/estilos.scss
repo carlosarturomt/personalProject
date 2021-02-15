@@ -10,6 +10,7 @@ $azul: #5b7dbc;
 $azultext: #00313f;
 $azulshadow: #22bced;
 $azulHover: #5b7dbc7e;
+$azulNoHover: #2d4363;
 $azuldark: #00090c;
 $sombraDark: 10px 10px 20px rgba(170, 170, 170, .16);
 $sombraLight: 10px 10px 0px rgba(0, 0, 0, .16);
@@ -302,7 +303,7 @@ a {
 .header--image-container {
     width: 80%;
     min-width: 120px;
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
     padding-top: 100px;
     margin-bottom: 50px;
@@ -322,7 +323,7 @@ a {
     background-color: $blanco;
     border-radius: 5px;
     min-width: 120px;
-    max-width: 350px;
+    max-width: 400px;
     border: transparent solid;
 }
 
@@ -378,7 +379,7 @@ a {
     background-color: $blanco;
     border-radius: 5px;
     min-width: 120px;
-    max-width: 350px;
+    max-width: 400px;
     border: transparent solid;
 }
 
@@ -479,28 +480,28 @@ a {
     background-color: $blancoMedio;
     box-shadow: 0px 2px 4px $azulshadow;
     color: $azultext;
-    // border: red solid;
 }
 
 .experience-cards--container {
     width: 100%;
     margin-top: 30px;
-    // border: blue solid;
 }
 
 .experience-detail--card {
     width: 80%;
     height: auto;
     min-width: 120px;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 20px;
+    padding-bottom: 1rem;
     border-radius: 5px;
     box-shadow: 0px 1px 2px $azultext;
     border: $azulshadow solid 0.5px;
     background-color: $blancoMedio;
     &:hover {
+        width: 90%;
         background: #7bc8ff75;
         .hidden {
             display: inherit;
@@ -517,6 +518,7 @@ a {
         .card-title h3 {
             text-align: left;
             margin-bottom: 5px;
+            font-size: 1.3rem;
         }
     }
 }
@@ -525,60 +527,55 @@ a {
     display: inline-block;
     width: 70px;
     height: 70px;
-    margin-top: 20px;
-    margin-left: 36%;
-    margin-bottom: 4px;
+    margin-top: 12%;
+    margin-left: calc(50% - 35px);
+    margin-bottom: 0px;
     background-image: url(../assets/icons/sombrero-de-graduacion.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // border: red solid;
 }
 
 .experience-detail--card .practice {
     display: inline-block;
     width: 70px;
     height: 70px;
-    margin-top: 20px;
-    margin-left: 36%;
-    margin-bottom: 4px;
+    margin-top: 12%;
+    margin-left: calc(50% - 35px);
+    margin-bottom: 0px;
     background-image: url(../assets/icons/obrero.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // border: red solid;
 }
 
 .experience-detail--card .work {
     display: inline-block;
     width: 70px;
     height: 70px;
-    margin-top: 20px;
-    margin-left: 36%;
-    margin-bottom: 4px;
+    margin-top: 12%;
+    margin-left: calc(50% - 35px);
+    margin-bottom: 0px;
     background-image: url(../assets/icons/portfolio.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // border: red solid;
 }
 
 .experience-detail--card h3 {
     width: 95%;
     min-width: 120px;
     padding-top: 0px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
     line-height: 1.2rem;
     font-weight: bold;
     text-align: center;
-    // background-color: $blancoMedio;
     color: $azultext;
     body.dark & {
         color: $azulshadow;
     }
-    // border: red solid;
 }
 
 .hidden {
@@ -595,11 +592,9 @@ a {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 1px;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     line-height: 1.05rem;
     font-weight: 500;
-    // text-align: center;
-    // color: $azul;
 }
 
 .experience-detail--card p {
@@ -607,7 +602,7 @@ a {
     min-width: 120px;
     padding-left: 10px;
     padding-bottom: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1rem;
 }
 
@@ -616,19 +611,36 @@ a {
     min-width: 120px;
     padding-left: 10px;
     padding-bottom: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 0.8rem;
     // text-align: center;
-    color: #757575;
+    color: $azultext;
+    body.dark & {
+        color: $blanco;
+    }
 }
 
 .experience-scroll--card {
     width: 100%;
-    height: 129px;
+    height: 400px;
     overflow: scroll;
     overflow-x: hidden;
     margin-bottom: 1px;
-    // border: red solid;
+}
+
+.experience-scroll--card h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $azultext;
+    body.dark & {
+        color: $azulshadow;
+    }
+}
+
+.experience-scroll--card article a {
+    body.dark & {
+        color: $azuldark;
+    }
 }
 
 .experience-card--proyect img {
@@ -650,12 +662,24 @@ a {
 }
 
 .experience-card--proyect a {
-    width: 90%;
+    width: auto;
+    margin-left: calc(50% - 30px);
     margin-right: 5%;
-    padding: 0%;
+    padding: 0.1rem 0.5rem;
     text-align: right;
     float: right;
     margin-bottom: 25px;
+    font-size: 1rem;
+    border: $azulshadow solid 0.5px;
+    border-radius: 5px;
+    &:hover {
+        background: $azulHover;
+    }
+}
+
+.experience-scroll--card hr {
+    margin-bottom: 2rem;
+    border: $azulshadow 0.1px solid;
 }
 
 section+.experience-detail--card {
@@ -711,7 +735,7 @@ section+.experience-detail--card {
 .skill-card--container {
     width: 80%;
     min-width: 120px;
-    max-width: 300px;
+    max-width: 400px;
     height: 100%;
     margin: 15px auto;
     padding: 15px;
@@ -732,7 +756,7 @@ section+.experience-detail--card {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1rem;
     font-weight: 300;
     text-align: center;
@@ -747,11 +771,13 @@ section+.experience-detail--card {
 }
 
 .computer-dark {
+    display: block;
     width: 90%;
+    margin-top: 3rem;
     margin-left: calc(50% - 145px);
     margin-bottom: 5rem;
     min-width: 120px;
-    max-width: 300px;
+    max-width: 280px;
 }
 
 .skills-detail-container {
@@ -762,25 +788,92 @@ section+.experience-detail--card {
     margin: 0 auto;
     top: 5px;
     margin-left: calc(50% - 130px);
+    &:hover {
+        position: absolute;
+        top: -0.5rem;
+        width: 80%;
+        min-width: 120px;
+        max-width: 400px;
+        height: 250px;
+        margin: 0 10%;
+        background-color: $blanco;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px $azultext;
+        body.dark & {
+            h3 {
+                color: $azulshadow;
+            }
+            background: $azulNoHover;
+            border: $azulshadow solid 0.5px;
+        }
+    }
+    @media screen and (max-width:363px) {
+        &:hover {
+            position: absolute;
+            width: 80%;
+            min-width: 120px;
+            max-width: 280px;
+            height: 100px;
+            margin: 0 auto;
+            top: 5px;
+            margin-left: calc(50% - 130px);
+            background-color: transparent;
+            border-radius: none;
+            box-shadow: none;
+            body.dark & {
+                h3 {
+                    color: $azultext;
+                }
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+    @media screen and (min-width:480px) {
+        &:hover {
+            margin-left: calc(50% - 200px);
+        }
+    }
 }
 
 .skills-scroll--table {
-    width: 95%;
-    height: 100px;
+    width: 85%;
+    height: 95px;
     overflow: scroll;
     overflow-x: hidden;
     margin: 0 auto;
     padding-left: 40px;
-    // border: red solid;
+    font-size: 0.8rem;
+    background-color: transparent;
+    &:hover {
+        height: 210px;
+        font-size: 1.2rem;
+        img {
+            width: 45px;
+            margin-left: -45px;
+        }
+    }
+    @media screen and (max-width: 363px) {
+        height: 95px;
+        &:hover {
+            height: 95px;
+            font-size: 0.8rem;
+            img {
+                width: 40px;
+                margin-left: -20px;
+            }
+        }
+    }
+}
+
+.skills-scroll--table table {
+    width: auto;
+    margin: 0 auto;
 }
 
 .skills-scroll--table img {
     width: 40px;
-    margin: 0 auto;
-}
-
-.skills-scroll--table td {
-    font-size: 0.8rem;
+    margin-left: -40px;
 }
 
 .border {
