@@ -52,7 +52,7 @@ body.dark .skill-card--container {
 }
 
 body.dark .image {
-  border: #22bced solid 1px;
+  border: #22bced solid 0.5px;
   padding: 0.4rem;
   background-color: #5b7dbc7e;
 }
