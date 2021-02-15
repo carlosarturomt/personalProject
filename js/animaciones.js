@@ -3,7 +3,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 200) {
             $(this).addClass("slideLeft");
         }
     });
@@ -13,7 +13,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 250) {
             $(this).addClass("slideLeft");
         }
     });
@@ -23,7 +23,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 300) {
             $(this).addClass("slideLeft");
         }
     });
@@ -33,7 +33,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 800) {
+        if (imagePos < topOfWindow + 350) {
             $(this).addClass("slideLeft");
         }
     });
@@ -43,7 +43,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 900) {
+        if (imagePos < topOfWindow + 400) {
             $(this).addClass("slideLeft");
         }
     });
@@ -53,7 +53,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 900) {
+        if (imagePos < topOfWindow + 450) {
             $(this).addClass("slideLeft");
         }
     });
@@ -63,7 +63,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 500) {
             $(this).addClass("slideLeft");
         }
     });
@@ -73,7 +73,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 550) {
             $(this).addClass("slideLeft");
         }
     });
@@ -83,7 +83,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 600) {
             $(this).addClass("slideLeft");
         }
     });
@@ -93,7 +93,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 650) {
             $(this).addClass("slideLeft");
         }
     });
@@ -105,7 +105,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 200) {
             $(this).addClass("slideRight");
         }
     });
@@ -115,7 +115,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 250) {
             $(this).addClass("slideRight");
         }
     });
@@ -125,7 +125,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 700) {
+        if (imagePos < topOfWindow + 300) {
             $(this).addClass("slideRight");
         }
     });
@@ -135,7 +135,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 800) {
+        if (imagePos < topOfWindow + 350) {
             $(this).addClass("slideRight");
         }
     });
@@ -145,7 +145,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 900) {
+        if (imagePos < topOfWindow + 400) {
             $(this).addClass("slideRight");
         }
     });
@@ -155,7 +155,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 900) {
+        if (imagePos < topOfWindow + 450) {
             $(this).addClass("slideRight");
         }
     });
@@ -165,7 +165,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 500) {
             $(this).addClass("slideRight");
         }
     });
@@ -175,7 +175,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 550) {
             $(this).addClass("slideRight");
         }
     });
@@ -185,7 +185,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 600) {
             $(this).addClass("slideRight");
         }
     });
@@ -195,7 +195,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
+        if (imagePos < topOfWindow + 650) {
             $(this).addClass("slideRight");
         }
     });
@@ -205,7 +205,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 600) {
+        if (imagePos < topOfWindow + 650) {
             $(this).addClass("slideRight");
         }
     });
@@ -215,7 +215,7 @@ $(window).scroll(function() {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 600) {
+        if (imagePos < topOfWindow + 300) {
             $(this).addClass("expandUp");
         }
     });
