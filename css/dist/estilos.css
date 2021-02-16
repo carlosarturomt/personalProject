@@ -46,6 +46,11 @@ body.dark .skill-card--container {
   background: #5b7dbc7e;
   border: #22bced solid 0.5px;
 }
+body.dark .image {
+  border: #22bced solid 0.5px;
+  padding: 0.4rem;
+  background-color: #5b7dbc7e;
+}
 body.dark .main-details-container,
 body.dark .main-skills-container {
   background: none;
@@ -281,7 +286,7 @@ a {
 .header--image-container {
   width: 80%;
   min-width: 120px;
-  max-width: 350px;
+  max-width: 400px;
   margin: 0 auto;
   padding-top: 100px;
   margin-bottom: 50px;
@@ -300,7 +305,7 @@ a {
   background-color: #FEFEFE;
   border-radius: 5px;
   min-width: 120px;
-  max-width: 350px;
+  max-width: 400px;
   border: transparent solid;
 }
 
@@ -325,7 +330,7 @@ body.dark .header--title-container h1 {
   margin: 0 auto;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   color: #00313f;
 }
@@ -338,15 +343,26 @@ body.dark .header--title-container h2 {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1rem;
-  line-height: 1rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 500;
   text-align: center;
   color: #00313f;
   border: transparent solid;
 }
 body.dark .header--title-container p {
   color: #FEFEFE;
+}
+
+.header--title-container a {
+  color: #00313f;
+}
+body.dark .header--title-container a {
+  color: #FEFEFE;
+}
+.header--title-container a:hover {
+  color: #00313f;
+  text-shadow: 1px 1px 2px #22bced;
 }
 
 .header--text-container {
@@ -356,7 +372,7 @@ body.dark .header--title-container p {
   background-color: #FEFEFE;
   border-radius: 5px;
   min-width: 120px;
-  max-width: 350px;
+  max-width: 400px;
   border: transparent solid;
 }
 
@@ -365,8 +381,8 @@ body.dark .header--title-container p {
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   font-weight: 300;
   text-align: justify;
   color: #00313f;
@@ -468,16 +484,18 @@ body.dark .header--text-container p {
   width: 80%;
   height: auto;
   min-width: 120px;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding-bottom: 1rem;
   border-radius: 5px;
   box-shadow: 0px 1px 2px #00313f;
   border: #22bced solid 0.5px;
   background-color: #88888811;
 }
 .experience-detail--card:hover {
+  width: 90%;
   background: #7bc8ff75;
 }
 .experience-detail--card:hover .hidden {
@@ -495,16 +513,17 @@ body.dark .header--text-container p {
 .experience-detail--card:hover .card-title h3 {
   text-align: left;
   margin-bottom: 5px;
+  font-size: 1.3rem;
 }
 
 .experience-detail--card .graduation {
   display: inline-block;
   width: 70px;
   height: 70px;
-  margin-top: 20px;
-  margin-left: 36%;
-  margin-bottom: 4px;
-  background-image: url(../media/icons/sombrero-de-graduacion.png);
+  margin-top: 12%;
+  margin-left: calc(50% - 35px);
+  margin-bottom: 0px;
+  background-image: url(../assets/icons/sombrero-de-graduacion.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -514,10 +533,10 @@ body.dark .header--text-container p {
   display: inline-block;
   width: 70px;
   height: 70px;
-  margin-top: 20px;
-  margin-left: 36%;
-  margin-bottom: 4px;
-  background-image: url(../media/icons/obrero.png);
+  margin-top: 12%;
+  margin-left: calc(50% - 35px);
+  margin-bottom: 0px;
+  background-image: url(../assets/icons/obrero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -527,10 +546,10 @@ body.dark .header--text-container p {
   display: inline-block;
   width: 70px;
   height: 70px;
-  margin-top: 20px;
-  margin-left: 36%;
-  margin-bottom: 4px;
-  background-image: url(../media/icons/portfolio.png);
+  margin-top: 12%;
+  margin-left: calc(50% - 35px);
+  margin-bottom: 0px;
+  background-image: url(../assets/icons/portfolio.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -540,9 +559,9 @@ body.dark .header--text-container p {
   width: 95%;
   min-width: 120px;
   padding-top: 0px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   line-height: 1.2rem;
   font-weight: bold;
   text-align: center;
@@ -566,7 +585,7 @@ body.dark .experience-detail--card h3 {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 1px;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   line-height: 1.05rem;
   font-weight: 500;
 }
@@ -576,7 +595,7 @@ body.dark .experience-detail--card h3 {
   min-width: 120px;
   padding-left: 10px;
   padding-bottom: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1rem;
 }
 
@@ -585,17 +604,42 @@ body.dark .experience-detail--card h3 {
   min-width: 120px;
   padding-left: 10px;
   padding-bottom: 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 0.8rem;
-  color: #757575;
+  color: #00313f;
+}
+body.dark .experience-detail--card small {
+  color: #FEFEFE;
+}
+
+.experience-detail--card a {
+  font-style: italic;
+  color: #00313f;
+}
+.experience-detail--card a:hover {
+  text-shadow: 1px 1px 2px #22bced;
+}
+body.dark .experience-detail--card a {
+  color: #FEFEFE;
 }
 
 .experience-scroll--card {
   width: 100%;
-  height: 129px;
+  height: 400px;
   overflow: scroll;
   overflow-x: hidden;
   margin-bottom: 1px;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+}
+
+.experience-scroll--card h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00313f;
+}
+body.dark .experience-scroll--card h4 {
+  color: #22bced;
 }
 
 .experience-card--proyect img {
@@ -617,12 +661,24 @@ body.dark .experience-detail--card h3 {
 }
 
 .experience-card--proyect a {
-  width: 90%;
+  width: auto;
+  margin-left: calc(50% - 30px);
   margin-right: 5%;
-  padding: 0%;
+  padding: 0.1rem 0.5rem;
   text-align: right;
   float: right;
   margin-bottom: 25px;
+  font-size: 1rem;
+  border: #22bced solid 0.5px;
+  border-radius: 5px;
+}
+.experience-card--proyect a:hover {
+  background: #5b7dbc7e;
+}
+
+.experience-scroll--card hr {
+  margin-bottom: 2rem;
+  border: #22bced 0.1px solid;
 }
 
 section + .experience-detail--card {
@@ -678,7 +734,7 @@ section + .experience-detail--card {
 .skill-card--container {
   width: 80%;
   min-width: 120px;
-  max-width: 300px;
+  max-width: 400px;
   height: 100%;
   margin: 15px auto;
   padding: 15px;
@@ -697,7 +753,7 @@ body.dark .skill-card--container h3 {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1rem;
   font-weight: 300;
   text-align: center;
@@ -712,11 +768,13 @@ body.dark .skill-card--container li {
 }
 
 .computer-dark {
+  display: block;
   width: 90%;
+  margin-top: 3rem;
   margin-left: calc(50% - 145px);
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   min-width: 120px;
-  max-width: 300px;
+  max-width: 280px;
 }
 
 .skills-detail-container {
@@ -728,27 +786,245 @@ body.dark .skill-card--container li {
   top: 5px;
   margin-left: calc(50% - 130px);
 }
+.skills-detail-container:hover {
+  position: absolute;
+  top: -0.5rem;
+  width: 80%;
+  min-width: 120px;
+  max-width: 400px;
+  height: 250px;
+  margin: 0 10%;
+  background-color: #FEFEFE;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #00313f;
+}
+body.dark .skills-detail-container:hover {
+  background: #2d4363;
+  border: #22bced solid 0.5px;
+}
+body.dark .skills-detail-container:hover h3 {
+  color: #22bced;
+}
+@media screen and (max-width: 363px) {
+  .skills-detail-container:hover {
+    position: absolute;
+    width: 80%;
+    min-width: 120px;
+    max-width: 280px;
+    height: 100px;
+    margin: 0 auto;
+    top: 5px;
+    margin-left: calc(50% - 130px);
+    background-color: transparent;
+    border-radius: none;
+    box-shadow: none;
+  }
+  body.dark .skills-detail-container:hover {
+    background-color: transparent;
+    border: none;
+  }
+  body.dark .skills-detail-container:hover h3 {
+    color: #00313f;
+  }
+}
+@media screen and (min-width: 480px) {
+  .skills-detail-container:hover {
+    margin-left: calc(50% - 200px);
+  }
+}
 
 .skills-scroll--table {
-  width: 95%;
-  height: 100px;
+  width: 85%;
+  height: 95px;
   overflow: scroll;
   overflow-x: hidden;
   margin: 0 auto;
   padding-left: 40px;
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+.skills-scroll--table:hover {
+  height: 210px;
+  font-size: 1.2rem;
+}
+.skills-scroll--table:hover img {
+  width: 45px;
+  margin-left: -45px;
+}
+@media screen and (max-width: 363px) {
+  .skills-scroll--table {
+    height: 95px;
+  }
+  .skills-scroll--table:hover {
+    height: 95px;
+    font-size: 0.8rem;
+  }
+  .skills-scroll--table:hover img {
+    width: 40px;
+    margin-left: -40px;
+  }
+}
+
+.skills-scroll--table table {
+  width: auto;
+  margin: 0 auto;
 }
 
 .skills-scroll--table img {
   width: 40px;
-  margin: 0 auto;
-}
-
-.skills-scroll--table td {
-  font-size: 0.8rem;
+  margin-left: -40px;
 }
 
 .border {
   border: solid purple;
+}
+
+.scroll_courses-home {
+  width: 100%;
+  height: 72vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.scroll_courses-home article div {
+  width: 80%;
+  min-width: 100px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.scroll_courses-home article {
+  width: 80%;
+  color: #00313f;
+  margin: 0 auto;
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #00313f;
+}
+body.dark .scroll_courses-home article {
+  color: #FEFEFE;
+}
+
+.scroll_courses-home article p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.scroll_courses-home article h4 {
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.scroll_courses-home article small {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.img_courses {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  background-color: #FEFEFE;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.24);
+}
+body.dark footer {
+  background-color: #222222;
+}
+
+footer .container_info {
+  font-size: 1.5rem;
+  height: 3rem;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+footer .container_social {
+  flex-grow: 2;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+footer h4 {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #00313f;
+}
+body.dark footer h4 {
+  color: #5b7dbc;
+}
+
+footer article a {
+  margin: 0.3rem;
+}
+
+footer .facebook {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/facebook.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+body.dark footer .facebook {
+  background-image: url(../assets/imgs/logo/facebookW.png);
+}
+
+footer .instagram {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/instagram.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+body.dark footer .instagram {
+  background-image: url(../assets/imgs/logo/instagramW.png);
+}
+
+footer .github {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/github.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+body.dark footer .github {
+  background-image: url(../assets/imgs/logo/githubW.png);
+}
+
+footer .linkedin {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/imgs/logo/linkedin.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+body.dark footer .linkedin {
+  background-image: url(../assets/imgs/logo/linkedinW.png);
 }
 
 .theme {
@@ -908,5 +1184,43 @@ body.dark .skill-card--container li {
   }
   100% {
     -webkit-transform: translateX(0%);
+  }
+}
+.expandUp {
+  animation-name: expandUp;
+  -webkit-animation-name: expandUp;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes expandUp {
+  0% {
+    transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+  60% {
+    transform: translateY(-7%) scaleY(1.12);
+  }
+  75% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0%) scale(1) scaleY(1);
+  }
+}
+@-webkit-keyframes expandUp {
+  0% {
+    -webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+  60% {
+    -webkit-transform: translateY(-7%) scaleY(1.12);
+  }
+  75% {
+    -webkit-transform: translateY(3%);
+  }
+  100% {
+    -webkit-transform: translateY(0%) scale(1) scaleY(1);
   }
 }

@@ -371,6 +371,14 @@ body.dark .header--title-container p {
   color: #FEFEFE;
 }
 
+.header--title-container a {
+  color: #00313f;
+}
+
+body.dark .header--title-container a {
+  color: #FEFEFE;
+}
+
 .header--title-container a:hover {
   color: #00313f;
   text-shadow: 1px 1px 2px #22bced;
@@ -631,6 +639,19 @@ body.dark .experience-detail--card small {
   color: #FEFEFE;
 }
 
+.experience-detail--card a {
+  font-style: italic;
+  color: #00313f;
+}
+
+.experience-detail--card a:hover {
+  text-shadow: 1px 1px 2px #22bced;
+}
+
+body.dark .experience-detail--card a {
+  color: #FEFEFE;
+}
+
 .experience-scroll--card {
   width: 100%;
   height: 400px;
@@ -649,10 +670,6 @@ body.dark .experience-detail--card small {
 
 body.dark .experience-scroll--card h4 {
   color: #22bced;
-}
-
-body.dark .experience-scroll--card article a {
-  color: #00090c;
 }
 
 .experience-card--proyect img {
@@ -940,6 +957,7 @@ body.dark .scroll_courses-home article {
 }
 
 .scroll_courses-home article h4 {
+  font-style: italic;
   font-size: 1.3rem;
   font-weight: bold;
 }
