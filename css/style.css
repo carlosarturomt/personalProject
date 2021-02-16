@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.margin1 {
+/* .margin1 {
     /* padding: 1%; */
     border: yellow solid;
 }
@@ -21,22 +21,4 @@
     /* float: left; */
     z-index: 100;
     position: absolute;
-}
-
-
-/* ul,
-li,
-tr,
-table,
-td {
-    border: red solid;
 } */
-
-
-/* .canva_sec {
-    width: auto;
-    /* margin-top: -10%; */
-
-background: yellow;
-
-}
