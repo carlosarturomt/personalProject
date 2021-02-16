@@ -372,6 +372,11 @@ a {
     }
 }
 
+.header--title-container a:hover {
+    color: $azultext;
+    text-shadow: 1px 1px 2px $azulshadow;
+}
+
 .header--text-container {
     width: 80%;
     margin: 0 auto;
