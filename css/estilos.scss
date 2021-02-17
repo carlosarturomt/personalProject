@@ -275,21 +275,134 @@ a {
     margin-left: auto;
 }
 
-
-/*MAIN*/
+// INDEX HOME
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
 
 .container-details {
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: auto;
     padding-top: 60px;
     // background-color: #00313f;
 }
 
 .container-details article {
+    position: absolute;
     width: 80%;
-    margin: 1rem auto;
-    background-color: #00313f;
+    top: 40vh;
+    margin-left: 10%;
+    padding: 1rem;
+    // background-color: rgba(255, 255, 255, 0.473);
+    // background-color: #00090c6c;
+    border-radius: 10px;
+    body.dark & {
+        // background: $azulHover;
+        // border: $azulshadow solid 0.5px;
+    }
 }
+
+.container-details article h1 {
+    width: 90%;
+    top: 160px;
+    margin-left: 5%;
+    font-size: 5.2rem;
+    line-height: 4.2rem;
+    // background-color: #aa00006b;
+    // color: $azultext;
+    color: $blanco;
+    text-shadow: 2px 2px 4px $azuldark;
+    text-align: center;
+    body.dark & {
+        color: $blanco;
+        text-shadow: 2px 2px 8px $azultext;
+    }
+    @media screen and (max-width:500px) {
+        font-size: 2.2rem;
+        line-height: 1.8rem;
+    }
+}
+
+.container-details article h2 {
+    width: 90%;
+    top: 170px;
+    margin-top: 1rem;
+    margin-left: 5%;
+    font-size: 2rem;
+    line-height: 2rem;
+    // background-color: #0eaa006b;
+    // color: $azultext;
+    color: $blanco;
+    text-shadow: 2px 2px 4px $azuldark;
+    text-align: center;
+    body.dark & {
+        color: $blanco;
+    }
+    @media screen and (max-width:500px) {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    // font-family: Helvetica, Arial, sans-serif;
+    // font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/imgs/escuelaAristo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    body.dark & {
+        background-image: url('');
+        background-color: $azuldark;
+    }
+}
+
+
+/*MAIN*/
 
 @media screen and (min-width:700px) {
     .video-dos {

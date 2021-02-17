@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" href="assets/imgs/carlosarturomt_logo.png">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
 </head>
 
@@ -48,17 +49,18 @@
     </header>
     <main>
         <!-------------------------------- SECCIÓN "HOME"--------------------------------------->
-        <section class="container-details">
-            <article>
-                <h1>Soy Carlos Arturo MT</h1>
-                <h2>El conocimiento es algo que todos debemos buscar, por lo que me apasiona el aprendizaje.</h2>
-            </article>
-        </section>
+        <!-- particles.js container -->
+        <div id="particles-js">
+            <section class="container-details">
+                <article>
+                    <h1>Carlos Arturo MT</h1>
+                    <h2>Psicólgo Educativo con estrategias digitales de aprendizaje que me han orillado al desarrollo web.</h2>
+                </article>
+            </section>
+        </div>
 
-        <!------------------------------------------ SECCIÓN "EXPERIENCIA" ---------------------------------------------->
-        <!------------------------------------- SECCIÓN "HABILIDADES" CON ANIMACIONES ----------------------------------->
 
-        <!--------------------------------------------- SECCIÓN "CURSOS " ------------------------------------------------->
+
 
         <!----------------------------------- BOTÓN FLOTANTE Y PIE DE PÁGINA -------------------------------------------->
         <div class="button_WhatsApp">
@@ -88,6 +90,38 @@
             </article>
         </footer>
     </main>
+
+    <!-- <div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+    </div> -->
+
+
+    <!-- scripts -->
+    <script src="../particles.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- stats.js -->
+    <script src="js/lib/stats.js"></script>
+    <!-- <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+ -->
 </body>
 <script src="js/theme.js "></script>
 <script src="js/toggle.js "></script>
