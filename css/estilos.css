@@ -288,9 +288,9 @@ canvas {
 
 .container-details article {
   position: absolute;
-  width: 80%;
+  width: 90%;
   top: 40vh;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -299,45 +299,67 @@ canvas {
   width: 90%;
   top: 160px;
   margin-left: 5%;
-  font-size: 5.2rem;
+  font-size: 5.3rem;
   line-height: 4.2rem;
   color: #FEFEFE;
-  text-shadow: 2px 2px 4px #00090c;
+  text-shadow: 2px 2px 4px #000;
   text-align: center;
 }
 
 body.dark .container-details article h1 {
-  color: #FEFEFE;
   text-shadow: 2px 2px 8px #00313f;
 }
 
 @media screen and (max-width: 500px) {
   .container-details article h1 {
-    font-size: 2.2rem;
-    line-height: 1.8rem;
+    width: 98%;
+    margin-left: 1%;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
   }
 }
 
-.container-details article h2 {
-  width: 90%;
-  top: 170px;
-  margin-top: 1rem;
-  margin-left: 5%;
-  font-size: 2rem;
-  line-height: 2rem;
+.word {
+  margin-left: 35%;
+  justify-content: end;
+  font-size: 2.5rem;
   color: #FEFEFE;
-  text-shadow: 2px 2px 4px #00090c;
-  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  line-height: 1.4em;
+  height: 1.4em;
+  padding: 0 14px 0 7px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
 }
 
-body.dark .container-details article h2 {
-  color: #FEFEFE;
+body.dark .word {
+  text-shadow: 2px 2px 8px #00313f;
 }
 
 @media screen and (max-width: 500px) {
-  .container-details article h2 {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
+  .word {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: 6%;
+  }
+}
+
+.word:before {
+  content: '';
+  background-color: #FEFEFE;
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 7px;
+}
+
+@media screen and (max-width: 500px) {
+  .word:before {
+    height: 1.5rem;
+    top: 0px;
+    bottom: 0px;
   }
 }
 

@@ -291,12 +291,10 @@ canvas {
 
 .container-details article {
     position: absolute;
-    width: 80%;
+    width: 90%;
     top: 40vh;
-    margin-left: 10%;
+    margin-left: 5%;
     padding: 1rem;
-    // background-color: rgba(255, 255, 255, 0.473);
-    // background-color: #00090c6c;
     border-radius: 10px;
     body.dark & {
         // background: $azulHover;
@@ -308,41 +306,56 @@ canvas {
     width: 90%;
     top: 160px;
     margin-left: 5%;
-    font-size: 5.2rem;
+    font-size: 5.3rem;
     line-height: 4.2rem;
-    // background-color: #aa00006b;
-    // color: $azultext;
     color: $blanco;
-    text-shadow: 2px 2px 4px $azuldark;
+    text-shadow: 2px 2px 4px $negro;
     text-align: center;
     body.dark & {
-        color: $blanco;
         text-shadow: 2px 2px 8px $azultext;
     }
     @media screen and (max-width:500px) {
-        font-size: 2.2rem;
-        line-height: 1.8rem;
+        width: 98%;
+        margin-left: 1%;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
     }
 }
 
-.container-details article h2 {
-    width: 90%;
-    top: 170px;
-    margin-top: 1rem;
-    margin-left: 5%;
-    font-size: 2rem;
-    line-height: 2rem;
-    // background-color: #0eaa006b;
-    // color: $azultext;
+.word {
+    margin-left: 35%;
+    justify-content: end;
+    font-size: 2.5rem;
     color: $blanco;
-    text-shadow: 2px 2px 4px $azuldark;
-    text-align: center;
+    text-shadow: 2px 2px 4px $negro;
+    line-height: 1.4em;
+    height: 1.4em;
+    padding: 0 14px 0 7px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
     body.dark & {
-        color: $blanco;
+        text-shadow: 2px 2px 8px $azultext;
     }
-    @media screen and (max-width:500px) {
-        font-size: 1.3rem;
-        line-height: 1.3rem;
+    @media screen and (max-width: 500px) {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-left: 6%;
+    }
+}
+
+.word:before {
+    content: '';
+    background-color: $blanco;
+    width: 1px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 7px;
+    @media screen and (max-width: 500px) {
+        height: 1.5rem;
+        top: 0px;
+        bottom: 0px;
     }
 }
 
