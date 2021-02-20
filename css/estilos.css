@@ -413,6 +413,171 @@ body.dark #particles-js {
   background-color: #00090c;
 }
 
+.youtuber {
+  margin-left: 25%;
+  justify-content: end;
+  font-size: 2rem;
+  color: #00313f;
+  text-shadow: 1px 1px 2px #22bced;
+  line-height: 1.4em;
+  height: 1.4em;
+  padding: 0 14px 0 7px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+body.dark .youtuber {
+  color: #FEFEFE;
+  text-shadow: 2px 2px 8px #00313f;
+}
+
+@media screen and (max-width: 500px) {
+  .youtuber {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: 10%;
+  }
+}
+
+.youtuber:before {
+  content: '';
+  background-color: #FEFEFE;
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 7px;
+}
+
+@media screen and (max-width: 500px) {
+  .youtuber:before {
+    height: 1.5rem;
+    top: 0px;
+    bottom: 0px;
+  }
+}
+
+.container-other {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background-color: #FEFEFE;
+}
+
+body.dark .container-other {
+  background-color: #000;
+}
+
+.container-other h2 {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #00313f;
+  text-shadow: 1px 1px 2px #22bced;
+}
+
+body.dark .container-other h2 {
+  color: #FEFEFE;
+}
+
+@media screen and (max-width: 500px) {
+  .container-other h2 {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+}
+
+.container-other aside div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.3rem 0 0 0;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.caja1 {
+  justify-content: space-between;
+  width: auto;
+  min-width: 280px;
+  max-width: 500px;
+  order: 1;
+  margin-left: 5%;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .caja1 {
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    min-width: 200px;
+    max-width: 500px;
+    order: 2;
+  }
+}
+
+.caja1 img {
+  width: 100%;
+}
+
+.caja2 {
+  width: auto;
+  margin-top: 2.5rem;
+  min-width: 100px;
+  margin-left: 0px;
+  margin-right: 0rem;
+  margin: 1rem;
+  flex: 8;
+  order: 2;
+  flex-grow: 4;
+}
+
+@media screen and (max-width: 500px) {
+  .caja2 {
+    justify-content: space-between;
+    width: auto;
+    min-width: 200px;
+    max-width: 500px;
+    order: 0;
+  }
+}
+
+.youtube--btn {
+  background-color: transparent;
+  border: red 0.5px solid;
+  border-radius: 10px;
+  width: 90px;
+  justify-content: space-around;
+  display: flex;
+  margin: 0 auto;
+}
+
+.youtube--btn:hover {
+  background-color: #c40000;
+}
+
+.youtube--btn:hover .youtube--btn_ico {
+  background-image: url(/assets/icons/play.png);
+}
+
+.youtube--btn_ico {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 15px 30px;
+  background-image: url(/assets/icons/playRed.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*MAIN*/
 @media screen and (min-width: 700px) {
   .video-dos {
