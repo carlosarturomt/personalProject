@@ -416,7 +416,7 @@ canvas {
 
 // youtubeSection
 .youtuber {
-    margin-left: 25%;
+    margin-left: 22%;
     justify-content: end;
     font-size: 2rem;
     color: $azultext;
@@ -499,6 +499,7 @@ canvas {
     min-width: 280px;
     max-width: 500px;
     order: 1;
+    margin-top: 2.5rem;
     margin-left: 5%;
     margin-bottom: 2.5rem;
     // background-color: red;
@@ -515,6 +516,7 @@ canvas {
 
 .caja1 img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .caja2 {
@@ -528,7 +530,6 @@ canvas {
     order: 2;
     flex-grow: 4;
     // background-color: yellow;
-    // color: black;
     @media screen and (max-width: 500px) {
         justify-content: space-between;
         width: auto;

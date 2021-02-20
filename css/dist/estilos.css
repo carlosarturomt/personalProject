@@ -394,7 +394,7 @@ body.dark #particles-js {
 }
 
 .youtuber {
-  margin-left: 25%;
+  margin-left: 22%;
   justify-content: end;
   font-size: 2rem;
   color: #00313f;
@@ -481,6 +481,7 @@ body.dark .container-other h2 {
   min-width: 280px;
   max-width: 500px;
   order: 1;
+  margin-top: 2.5rem;
   margin-left: 5%;
   margin-bottom: 2.5rem;
 }
@@ -498,6 +499,7 @@ body.dark .container-other h2 {
 
 .caja1 img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .caja2 {
