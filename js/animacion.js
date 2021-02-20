@@ -30,3 +30,36 @@ setInterval(function() {
     }
 
 }, 150);
+
+var youtube = ['¿Creador de Contenidos?', 'Sintesis Literarias', 'Vídeos Educativos', '', '¿Youtuber?'],
+    youtubeWrapper = document.getElementById('youtube'),
+    youtubeWrapperContent = youtubeWrapper.innerHTML,
+    addingyoutube = false,
+    counter2 = 1;
+
+setInterval(function() {
+
+    if (youtubeWrapperContent.length > 0 && !addingyoutube) {
+        youtubeWrapper.innerHTML = youtubeWrapperContent.slice(0, -1);
+        youtubeWrapperContent = youtubeWrapper.innerHTML;
+    } else {
+        addingyoutube = true;
+    }
+
+    if (addingyoutube) {
+        if (youtubeWrapperContent.length < youtube[counter2].length) {
+            youtubeWrapper.innerHTML = youtube[counter2].slice(0, youtubeWrapperContent.length + 1);
+            youtubeWrapperContent = youtubeWrapper.innerHTML;
+        } else {
+            if (counter2 < youtube.length) {
+                counter2++
+            }
+            addingyoutube = false;
+        }
+    }
+
+    if (counter2 == youtube.length) {
+        counter2 = 0;
+    }
+
+}, 150);
