@@ -31,7 +31,7 @@ setInterval(function() {
 
 }, 150);
 
-var youtube = ['¿Creador de Contenidos?', 'Sintesis Literarias', 'Vídeos Educativos', '', '¿Youtuber?'],
+var youtube = ['¿Creador de Contenidos?', 'Síntesis  Literarias', 'Vídeos Educativos', '', '¿Youtuber?'],
     youtubeWrapper = document.getElementById('youtube'),
     youtubeWrapperContent = youtubeWrapper.innerHTML,
     addingyoutube = false,
