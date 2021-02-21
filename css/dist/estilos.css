@@ -448,8 +448,9 @@ body.dark .container-other {
 .container-other h2 {
   width: 95%;
   margin: 0 auto;
+  margin-top: 1.8rem;
   padding-top: 3rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
   line-height: 2rem;
   font-weight: bold;
@@ -467,6 +468,26 @@ body.dark .container-other h2 {
   }
 }
 
+.container-other h3 {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #00090c;
+}
+body.dark .container-other h3 {
+  color: #FEFEFE;
+}
+@media screen and (max-width: 500px) {
+  .container-other h3 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+
 .container-other aside div {
   width: 80%;
   margin: 0 auto;
@@ -477,22 +498,18 @@ body.dark .container-other h2 {
 
 .caja1 {
   justify-content: space-between;
-  width: auto;
-  min-width: 280px;
-  max-width: 500px;
+  width: 40%;
+  min-width: 200px;
+  max-width: 800px;
   order: 1;
   margin-top: 2.5rem;
   margin-left: 5%;
-  margin-bottom: 2.5rem;
 }
 @media screen and (max-width: 500px) {
   .caja1 {
-    justify-content: space-between;
     width: 85%;
-    margin: 0 auto;
-    margin-bottom: 2.5rem;
-    min-width: 200px;
     max-width: 500px;
+    margin: 0 auto;
     order: 2;
   }
 }
@@ -500,11 +517,11 @@ body.dark .container-other h2 {
 .caja1 img {
   width: 100%;
   border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 .caja2 {
   width: auto;
-  margin-top: 2.5rem;
   min-width: 100px;
   margin-left: 0px;
   margin-right: 0rem;
@@ -540,6 +557,24 @@ body.dark .container-other h2 {
   background-image: url(/assets/icons/play.png);
 }
 
+.youtube--btn p {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: red;
+}
+body.dark .youtube--btn p {
+  color: #FEFEFE;
+}
+.youtube--btn p:hover {
+  color: #FEFEFE;
+}
+
 .youtube--btn_ico {
   display: inline-block;
   width: 30px;
@@ -549,6 +584,107 @@ body.dark .container-other h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.skills-detail-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background-color: whitesmoke;
+  padding-bottom: 5rem;
+}
+body.dark .skills-detail-container1 {
+  background-color: #00090c;
+}
+
+.skills-scroll--table1 {
+  justify-content: space-between;
+  width: 40% !important;
+  min-width: 280px;
+  max-width: 800px;
+  order: 0;
+  border: 0.5px solid #22bced;
+  height: 350px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding-left: 40px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.skills-scroll--table1:hover {
+  background-color: #5b7dbc7e;
+}
+@media screen and (max-width: 400px) {
+  .skills-scroll--table1 {
+    font-size: 1.2rem;
+  }
+}
+
+.skills-scroll--table1 table {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills-scroll--table1 img {
+  width: 55px;
+  margin-left: 0px;
+}
+@media screen and (max-width: 450px) {
+  .skills-scroll--table1 img {
+    width: 40px;
+    margin-left: -30px;
+  }
+}
+
+.skills-scroll--table12 {
+  justify-content: space-between;
+  width: 40% !important;
+  min-width: 280px;
+  max-width: 800px;
+  order: 1;
+  border: 0.5px solid #22bced;
+  border-radius: 10px;
+  max-height: 350px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding-left: 40px;
+  font-size: 1.5rem;
+  color: #00090c;
+  background-color: transparent;
+}
+.skills-scroll--table12:hover {
+  background-color: #5b7dbc7e;
+}
+body.dark .skills-scroll--table12 {
+  color: #FEFEFE;
+}
+@media screen and (max-width: 400px) {
+  .skills-scroll--table12 {
+    font-size: 1.2rem;
+  }
+}
+
+.skills-scroll--table12 table {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills-scroll--table12 img {
+  width: 55px;
+  margin-left: 0px;
+}
+@media screen and (max-width: 450px) {
+  .skills-scroll--table12 img {
+    width: 40px;
+    margin-left: -35px;
+  }
 }
 
 /*MAIN*/
