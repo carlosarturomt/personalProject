@@ -645,6 +645,7 @@ body.dark .skills-detail-container1 {
   margin-top: 1.5rem;
   padding-left: 40px;
   font-size: 1.5rem;
+  line-height: 1.5rem;
   background-color: transparent;
   border-radius: 10px;
 }
@@ -692,6 +693,7 @@ body.dark .skills-detail-container1 {
   margin-top: 1.5rem;
   padding-left: 40px;
   font-size: 1.5rem;
+  line-height: 1.5rem;
   color: #00090c;
   background-color: transparent;
 }
