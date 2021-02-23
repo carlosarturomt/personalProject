@@ -691,6 +691,155 @@ canvas {
     }
 }
 
+// CONTACTO
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    min-height: calc(100vh - 200px);
+    margin-bottom: 1rem;
+}
+
+.login h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    body.dark & {
+        color: $blanco;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+}
+
+.login__container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+    background-color: transparent;
+    border: 2px solid $azulshadow;
+    border-radius: 40px;
+    color: $azultext;
+    padding: 30px 30px 20px;
+    min-height: 500px;
+    min-width: 300px;
+    max-width: 400px;
+    margin-top: 100px;
+    @media screen and (max-width: 450px) {
+        width: 100%;
+        border-radius: 0px;
+        background-color: transparent;
+        color: $azultext;
+        border: none;
+    }
+}
+
+.login__container--form {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7rem;
+}
+
+.input--register {
+    color: $azuldark;
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid $azulshadow;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    margin: 1rem auto;
+    outline: none;
+    width: 85%;
+    height: 47px;
+    order: 1;
+    body.dark & {
+        color: $azulshadow;
+    }
+}
+
+.button {
+    background-color: $azulshadow;
+    border: none;
+    border-radius: 25px;
+    color: $azuldark;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 35px 0px;
+    outline: none;
+    &:hover {
+        background-color: $azul;
+        border: $azulshadow solid 0.5px;
+        color: $blanco;
+    }
+}
+
+.login1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.user {
+    display: inline-block;
+    margin: 0 auto;
+    width: 47px;
+    height: 47px;
+    margin-top: 1rem;
+    background-image: url(../assets/icons/profile-user.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    order: 0;
+}
+
+.phone {
+    display: inline-block;
+    margin: 0 auto;
+    width: 47px;
+    height: 47px;
+    margin-top: 1rem;
+    background-image: url(../assets/icons/phone-call.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    order: 0;
+}
+
+.mail {
+    display: inline-block;
+    margin: 0 auto;
+    width: 47px;
+    height: 47px;
+    margin-top: 1rem;
+    background-image: url(../assets/icons/email.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    order: 0;
+}
+
+.font {
+    display: inline-block;
+    margin: 0 auto;
+    width: 47px;
+    height: 47px;
+    margin-top: 1rem;
+    background-image: url(../assets/icons/font.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    order: 0;
+}
+
 
 /*MAIN*/
 

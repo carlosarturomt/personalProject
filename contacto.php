@@ -28,12 +28,12 @@
         </div>
         <nav id="menu">
             <ul class="navTop">
-                <li><a href="index" style="color:#5b7dbc;">Inicio</a></li>
+                <li><a href="index">Inicio</a></li>
                 <li><a href="biografia">Biografía</a></li>
                 <li><a rel="noreferrer" target="_blank" href="https://obra.carlosarturomt.com/">Obra</a></li>
                 <li><a rel="noreferrer" target="_blank" href="http://learning.carlosarturomt.com/">eLearning</a></li>
                 <li><a rel="noreferrer" target="_blank" href="https://news.carlosarturomt.com/">Blog</a></li>
-                <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/carlosarturomt/">Contacto</a></li>
+                <li><a href="contacto" style="color:#5b7dbc;">Contacto</a></li>
             </ul>
         </nav>
 
@@ -48,40 +48,37 @@
     </header>
     <main>
     <section class="login">
-        <section class="login__container">
-            <h2>Inicia Sesión</h2>
-            <form class="login__container--form" action="">
-                <input class="input--register" type="email" name="correo" placeholder="Correo" autocomplete="email" required>
-                <input class="input--register" type="password" placeholder="Contraseña" autocomplete="current-password" required>
-                <button type="submit" class="button">Iniciar sesión</button>
-                <div class="login__container--rememberMe">
-                    <label>
-                        <input type="checkbox" name="" id="cbox1" value="checkbox"> Recuerdame
-                    </label>
-                    <a href="/">Olvidé mi contraseña</a>
-                </div>
-            </form>
-            <section class="login__container--socia-media">
-                <div>
-                    <img src="./assets/icons/google.png" alt="Logo Google">Iniciar sesión con Google
-                </div>
-                <div>
-                    <img src="./assets/icons/twitter.png" alt="Logo Twitter">Iniciar sesión con Twitter
-                </div>
+            <section class="login__container">
+                <h2>Contáctame</h2>
+                <form class="login__container--form " action="#" method="POST">
+                    <div class="login1">
+                        <span class="user"></span>
+                        <input class="input--register" type="text" name="nombre" placeholder="Nombre" autocomplete="on" required>
+                    </div>
+                    <div class="login1">
+                        <span class="phone"></span>
+                        <input class="input--register" type="tel" name="numero" placeholder="Teléfono" autocomplete="tel" required>
+                    </div>
+                    <div class="login1">
+                        <span class="mail   "></span>
+                        <input class="input--register" type="email" name="correo" placeholder="Correo" autocomplete="email" required>
+                    </div>
+                    <div class="login1">
+                        <span class="font"></span>
+                        <input class="input--register" type="text" name="mensaje" placeholder="Déjame tu mensaje" autocomplete="off" required>
+                    </div>
+                    <button type="submit" name="btn-submit" class="button">Enviar</button>
+                </form>
             </section>
-            <p class="login__container--register">
-                ¿No tienes ninguna cuenta? <a href="registro.html">Regístrate</a>
-            </p>
         </section>
-    </section>
     </main>
 
     <!----------------------------------- BOTÓN FLOTANTE Y PIE DE PÁGINA -------------------------------------------->
-    <div class="button_WhatsApp">
+    <!-- <div class="button_WhatsApp">
         <a href="https://api.whatsapp.com/send?phone=525610284112" target="_blank" rel="noopener">
             <img src="assets/imgs/logo/Whatsapp.png " alt="boton WhatsApp" class="img_whatsapp-home">
         </a>
-    </div>
+    </div> -->
 
     <footer>
         <article class="container_info">
@@ -112,8 +109,48 @@
 <script src="js/theme.js "></script>
 <script src="js/toggle.js "></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-<!-- <script src="js/animacion.js "></script>
-<script src="js/animaciones.js "></script> -->
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js " crossorigin="anonymous " aria-label="Dark Theme "></script>
 
 </html>
+
+<?php
+    if (isset($_POST['btn-submit'])) {
+
+        $asunto = "Correo desde la web";
+        $mensaje = test_input($_POST['mensaje']);
+        $numero = test_input($_POST['numero']);
+        $nombre = test_input($_POST['nombre']);
+        $correo = test_input($_POST['correo']);
+
+
+        $destino1 = "amiranda@dna3.com.mx";
+
+        $header = "From: web carlosarturomt" . "\r\n";
+        $header = "Reply-To: noreply" . "\r\n";
+        $header = "X-Mailer: PHP/" . phpversion();
+
+        $carta = "Mensaje: $mensaje \n";
+        $carta .= "Tel. de contacto: $numero \n";
+        $carta .= "Nombre del contacto: $nombre \n";
+        $carta .= "Correo de contacto: $correo \n";
+
+       
+        // $mail1 = mail($destino1, $asunto, $carta, $header);
+        $mail1 = mail($destino1, $asunto, $carta, $header);
+
+        if ($mail1) {
+
+            echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
+            echo "<meta http-equiv='refresh' content='3,url=index.html'>";
+        } else {
+            echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
+        }
+    }
+    function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?>
