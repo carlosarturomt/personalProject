@@ -8,7 +8,7 @@
     <meta name="author" content="Carlos Arturo Miranda Trujano">
     <meta name="DC.creator" content="Miranda Trujano Carlos Arturo">
     <meta name="copyright" content="Carlos Arturo Miranda Trujano">
-    <meta name="description" content="Descubre al psicólogo Carlos, un joven que se ha especializado en Educación, con estrategias digitales de aprendizaje que lo han orillado al desarrollo web, enfocándose en el FrontEnd.">
+    <meta name="description" content="Contacta al psicólogo Carlos Arturo Miranda Trujano, envíale un mensaje y trabajen juntos cumpliendo proyectos, o si es que necesitas, un seguimiento terapeútico.">
     <title>Contacto|Carlos Arturo Miranda Trujano</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
