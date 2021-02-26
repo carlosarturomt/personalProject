@@ -841,6 +841,302 @@ body.dark .input--register {
   order: 0;
 }
 
+.container-galeria {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+
+.container-galeria article {
+  /* position: absolute; */
+  width: 100%;
+  top: 40vh;
+  padding: 1rem;
+  border-radius: 10px;
+  /* body.dark & {
+      // background: $azulHover;
+      // border: $azulshadow solid 0.5px;
+  } */
+}
+
+.container-galeria article h2 {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #00313f;
+  text-shadow: 1.5px 1.5px 3px #22bced;
+}
+body.dark .container-galeria article h2 {
+  color: #FEFEFE;
+}
+@media screen and (max-width: 500px) {
+  .container-galeria article h2 {
+    width: 98%;
+    margin-left: 1%;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+img {
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+.container-all {
+  position: relative;
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: transparent;
+  /* border: red solid 2px; */
+}
+
+.slide {
+  /* margin-top: 260px !important; */
+  width: 100%;
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  transition: all 600ms;
+  animation-name: autoplay;
+  animation-duration: 6.5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.item-slide {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.pagination {
+  position: relative;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #00313f;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.pagination-item:hover {
+  transform: scale(2);
+}
+
+.pagination-item img {
+  display: inline-block;
+  max-width: none;
+  height: 100%;
+  transform: scale(1);
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.pagination-item:hover img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide {
+  animation: none;
+  transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"] {
+  background: #fff;
+}
+
+input[id="2"]:checked ~ .slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"] {
+  background: #fff;
+}
+
+input[id="3"]:checked ~ .slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
+  background: #fff;
+}
+
+.pagination0 {
+  position: relative;
+}
+
+.pagination1 {
+  position: relative;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-picture_course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1px;
+  text-align: center;
+  transition: all 300ms;
+  background-color: transparent;
+}
+
+.pagination-picture_course:hover {
+  width: 383px;
+  height: 383px;
+}
+
+.pagination-picture_course img {
+  display: inline-block;
+  max-width: none;
+  height: 100%;
+  transform: scale(1);
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.pagination-picture_course:hover img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.analistaNecesidades {
+  background-image: url(/assets/imgs/constancias/aprendeOrg/analistaNecesidadesFormacion.JPG);
+}
+
+.desarrolladorContenidos {
+  background-image: url(/assets/imgs/constancias/aprendeOrg/desarrolladorContenidosAprendizaje.JPG);
+}
+
+.finder {
+  background-image: url(/assets/imgs/constancias/aprendeOrg/finder.JPG);
+}
+
+.covid {
+  background-image: url(/assets/imgs/constancias/gob/saludMentalCovid.JPG);
+}
+
+.competenciasDigitales {
+  background-image: url(/assets/imgs/constancias/google/competenciasDigitales.JPG);
+}
+
+.introduccionWeb1 {
+  background-image: url(/assets/imgs/constancias/google/introduccionWeb1.JPG);
+}
+
+.introduccionWeb2 {
+  background-image: url(/assets/imgs/constancias/google/introduccionWeb2.JPG);
+}
+
+.productividadPersonal {
+  background-image: url(/assets/imgs/constancias/google/productividadPersonal.JPG);
+}
+
+.transDigital {
+  background-image: url(/assets/imgs/constancias/google/transDigital.JPG);
+}
+
+.basicoJS {
+  background-image: url(/assets/imgs/constancias/platzi/basicoJS.JPG);
+}
+
+.frontendDeveloper {
+  background-image: url(/assets/imgs/constancias/platzi/frontendDeveloper.JPG);
+}
+
+.gitGithub {
+  background-image: url(/assets/imgs/constancias/platzi/gitGithub.JPG);
+}
+
+.marcaPersonal {
+  background-image: url(/assets/imgs/constancias/platzi/marcaPersonal.JPG);
+}
+
+.prework {
+  background-image: url(/assets/imgs/constancias/platzi/prework.JPG);
+}
+
+.responsiveDesign {
+  background-image: url(/assets/imgs/constancias/platzi/responsiveDesign.JPG);
+}
+
+.definitivoHtml {
+  background-image: url(/assets/imgs/constancias/platzi/definitivoHtml.JPG);
+}
+
+.fundamentosJS {
+  background-image: url(/assets/imgs/constancias/platzi/fundamentosJS.JPG);
+}
+
+.introWeb {
+  background-image: url(/assets/imgs/constancias/platzi/introWeb.JPG);
+}
+
+.practicoHtml {
+  background-image: url(/assets/imgs/constancias/platzi/practicoHtml.JPG);
+}
+
+.programacionBasica {
+  background-image: url(/assets/imgs/constancias/platzi/programacionBasica.JPG);
+}
+
+@keyframes autoplay {
+  33% {
+    transform: translate3d(calc(-100% * 0), 0, 0);
+  }
+  66% {
+    transform: translate3d(calc(-100% * 1), 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(-100% * 2), 0, 0);
+  }
+}
 /*MAIN*/
 @media screen and (min-width: 700px) {
   .video-dos {
