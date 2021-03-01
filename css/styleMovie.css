@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#movie {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.atomix.vg/wp-content/uploads/2019/11/spider-verse-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.dark #movie {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://wallpaper.to/files/preview/1280x751/41592130004lrhli3x76uuwlyxdtvodlsioinlkyxtxhvro91onf3zzvmlcldtqdpfmngm5atxzfh3wiyw0afm2xnnztqxpw3hqlv0o04obk6xl.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: green; */
+}
+
+#movie article {
+    margin-top: -100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* body.dark #movie article {} */
+
+#movie h1 {
+    color: white;
+    text-shadow: 2px 2px 4px red;
+}
+
+#movie h3 {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    /* border: solid black; */
+    /* border-radius: 5px;
+    padding: 1px; */
+}
+
+#movie p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+video {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+    video {
+        margin-top: 100px;
+    }
+}
