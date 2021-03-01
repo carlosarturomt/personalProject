@@ -633,17 +633,16 @@ body.dark .skills-detail-container1 {
 
 .skills-scroll--table1 {
   justify-content: space-between;
-  width: 40% !important;
-  min-width: 280px;
+  width: 40%;
+  min-width: 100px;
   max-width: 800px;
   order: 0;
   border: 0.5px solid #22bced;
-  height: 350px;
+  height: auto;
   overflow: scroll;
   overflow-x: hidden;
   margin: 0 auto;
   margin-top: 1.5rem;
-  padding-left: 40px;
   font-size: 1.5rem;
   line-height: 1.5rem;
   background-color: transparent;
@@ -654,34 +653,36 @@ body.dark .skills-detail-container1 {
   background-color: #5b7dbc7e;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .skills-scroll--table1 {
-    font-size: 1.2rem;
+    width: 85%;
+    font-size: 1.3rem;
   }
 }
 
 .skills-scroll--table1 table {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  margin-left: 0px !important;
 }
 
 .skills-scroll--table1 img {
-  width: 55px;
-  margin-left: 0px;
+  width: 50%;
+  margin-left: 10px !important;
 }
 
 @media screen and (max-width: 450px) {
   .skills-scroll--table1 img {
-    width: 40px;
-    margin-left: -30px;
+    width: 40%;
+    margin-left: 30px !important;
   }
 }
 
 .skills-scroll--table12 {
   justify-content: space-between;
-  width: 40% !important;
-  min-width: 280px;
+  width: 85%;
+  min-width: 100px;
   max-width: 800px;
   order: 1;
   border: 0.5px solid #22bced;
