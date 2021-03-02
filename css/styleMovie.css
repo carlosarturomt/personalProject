@@ -90,6 +90,17 @@ body.dark #particles-js1 {
     background-repeat: no-repeat;
 }
 
+.peli4 {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 15px;
+    background-image: url("https://lh5.googleusercontent.com/-QDVFe0LivU4/UTjDtcyiddI/AAAAAAAAAkU/y_B_xUuMtvE/s2000/prometheus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 /* video {
     width: 100%;
