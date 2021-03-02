@@ -648,8 +648,9 @@ canvas {
     margin-left: 10px !important;
     // border: yellow solid;
     @media screen and (max-width: 450px) {
-        width: 40%;
-        margin-left: 30px !important;
+        width: 40px;
+        margin-left: 25% !important;
+        margin-right: 25px;
     }
 }
 
@@ -694,8 +695,9 @@ canvas {
     margin-left: 0px !important;
     // border: yellow solid;
     @media screen and (max-width: 450px) {
-        width: 60px;
-        margin-left: -20px !important;
+        width: 40px;
+        margin-left: -30% !important;
+        margin-right: 25px;
     }
 }
 
