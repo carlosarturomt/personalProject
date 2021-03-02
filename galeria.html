@@ -17,15 +17,15 @@
     <link rel="icon" type="image/png" href="assets/imgs/carlosarturomt_logo.png">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/stylePic.css">
-    <!-- <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)"> -->
+    <!-- <link rel="stylesheet" href="./css/mobileG.css" media="(max-width: 450px)"> -->
 </head>
 
 <body>
     <!------------------------------------------ BARRA DE NAVEGACIÓN ------------------------------------------------>
     <header class="nav_100-fixed">
-        <div class="logo">
+        <figure class="logo">
             <a href="index"><img class="logo" src="assets/imgs/carlosarturomt_logo.png" alt="CarlosArturoMT"></a>
-        </div>
+        </figure>
         <nav id="menu">
             <ul class="navTop">
                 <li><a href="galeria" style="color:#5b7dbc;">Galería</a></li>
@@ -43,18 +43,18 @@
             <span><i class="fas fa-moon"></i></span>
         </button>
 
-        <div class="menu-toggle">
+        <figure class="menu-toggle">
             <i class="fa fa-bars"></i>
-        </div>
+        </figure>
     </header>
 
     <main>
         <!-------------------------------- SECCIÓN "GALERÍA"--------------------------------------->
         <section class="container-galeria">
             <article>
-                <h2>Galería</h2>
+                <aside class="container-all">
+                    <h2>Galería</h2>
 
-                <div class="container-all">
                     <input type="radio" id="1" name="image-slide" hidden/>
                     <input type="radio" id="2" name="image-slide" hidden/>
                     <input type="radio" id="3" name="image-slide" hidden/>
@@ -62,19 +62,19 @@
                     <input type="radio" id="5" name="image-slide" hidden/>
                     <input type="radio" id="6" name="image-slide" hidden/> -->
 
-                    <div class="slide">
-                        <div class="item-slide">
+                    <aside class="slide">
+                        <figure class="item-slide">
                             <img src="./assets/imgs/constancias/google/competenciasDigitales.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano">
-                        </div>
-                        <div class="item-slide">
+                        </figure>
+                        <figure class="item-slide">
                             <img src="./assets/imgs/constancias/aprendeOrg/desarrolladorContenidosAprendizaje.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano">
-                        </div>
-                        <div class="item-slide">
+                        </figure>
+                        <figure class="item-slide">
                             <img src="assets/imgs/constancias/platzi/frontendDeveloper.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano">
-                        </div>
-                    </div>
+                        </figure>
+                    </aside>
 
-                    <div class="pagination">
+                    <aside class="pagination">
                         <label class="pagination-item" for="1">
                             <img src="./assets/imgs/constancias/google/competenciasDigitales.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de competenciasDigitales">
                         </label>
@@ -84,163 +84,164 @@
                         <label class="pagination-item" for="3">
                             <img src="assets/imgs/constancias/platzi/frontendDeveloper.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de frontendDeveloper">
                         </label>
-                    </div>
-
+                    </aside>
                     <h3>Constancias</h3>
-
-                    <div class="pagination1">
-                        <label class="pagination-picture_course analistaNecesidades" for="4">
-                                <img src="assets/imgs/constancias/aprendeOrg/analistaNecesidadesFormacion.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano">
-                        </label>
-                        <label class="pagination-picture_course desarrolladorContenidos" for="5">
-                                <img src="assets/imgs/constancias/aprendeOrg/desarrolladorContenidosAprendizaje.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de desarrolladorContenidos">
-                        </label>
-                        <label class="pagination-picture_course finder" for="6">
-                                <img src="assets/imgs/constancias/aprendeOrg/finder.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de finder">
-                        </label>
-                        <label class="pagination-picture_course covid" for="7">
-                                <img src="assets/imgs/constancias/gob/saludMentalCovid.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de saludMentalCovid19">
-                        </label>
-                        <label class="pagination-picture_course competenciasDigitales" for="8">
-                                <img src="assets/imgs/constancias/google/competenciasDigitales.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de competenciasDigitales">
-                        </label>
-                        <label class="pagination-picture_course introduccionWeb1" for="9">
-                                <img src="assets/imgs/constancias/google/introduccionWeb1.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de introduccionWeb1">
-                        </label>
-                        <label class="pagination-picture_course introduccionWeb2" for="10">
-                            <img src="assets/imgs/constancias/google/introduccionWeb1.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de introduccionWeb2">
-                        </label>
-                        <label class="pagination-picture_course productividadPersonal" for="11">
-                            <img src="assets/imgs/constancias/google/productividadPersonal.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de productividadPersonal">
-                        </label>
-                        <label class="pagination-picture_course transDigital" for="12">
-                            <img src="assets/imgs/constancias/google/transDigital.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de trasnformación transDigital">
-                        </label>
-                        <label class="pagination-picture_course basicoJS" for="13">
-                            <img src="assets/imgs/constancias/platzi/basicoJS.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de basicoJavaScript">
-                        </label>
-                        <label class="pagination-picture_course frontendDeveloper" for="14">
-                            <img src="assets/imgs/constancias/platzi/frontendDeveloper.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de frontendDeveloper">
-                        </label>
-                        <label class="pagination-picture_course gitGithub" for="15">
-                            <img src="assets/imgs/constancias/platzi/gitGithub.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de gitGithub">
-                        </label>
-                        <label class="pagination-picture_course marcaPersonal" for="16">
-                            <img src="assets/imgs/constancias/platzi/marcaPersonal.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de marcaPersonal">
-                        </label>
-                        <label class="pagination-picture_course prework" for="17">
-                            <img src="assets/imgs/constancias/platzi/prework.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de prework">
-                        </label>
-                        <label class="pagination-picture_course responsiveDesign" for="18">
-                            <img src="assets/imgs/constancias/platzi/responsiveDesign.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de responsiveDesign">
-                        </label>
-                        <label class="pagination-picture_course definitivoHtml" for="19">
-                            <img src="assets/imgs/constancias/platzi/definitivoHtml.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de definitivoHtml">
-                        </label>
-                        <label class="pagination-picture_course fundamentosJS" for="17">
-                            <img src="assets/imgs/constancias/platzi/fundamentosJS.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de fundamentosJS">
-                        </label>
-                        <label class="pagination-picture_course introWeb" for="18">
-                            <img src="assets/imgs/constancias/platzi/introWeb.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de introWeb de platzi">
-                        </label>
-                        <label class="pagination-picture_course practicoHtml" for="19">
-                            <img src="assets/imgs/constancias/platzi/practicoHtml.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de practico Html y Css">
-                        </label>
-                        <label class="pagination-picture_course programacionBasica" for="19">
-                            <img src="assets/imgs/constancias/platzi/programacionBasica.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de programacionBasica">
-                        </label>
-                    </div>
+                    <section>
+                        <div class="pagination1">
+                            <label class="pagination-picture_course analistaNecesidades" for="4">
+                <img src="assets/imgs/constancias/aprendeOrg/analistaNecesidadesFormacion.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano">
+            </label>
+                            <label class="pagination-picture_course desarrolladorContenidos" for="5">
+                <img src="assets/imgs/constancias/aprendeOrg/desarrolladorContenidosAprendizaje.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de desarrolladorContenidos">
+            </label>
+                            <label class="pagination-picture_course finder" for="6">
+                <img src="assets/imgs/constancias/aprendeOrg/finder.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de finder">
+            </label>
+                            <label class="pagination-picture_course covid" for="7">
+                <img src="assets/imgs/constancias/gob/saludMentalCovid.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de saludMentalCovid19">
+            </label>
+                            <label class="pagination-picture_course competenciasDigitales" for="8">
+                <img src="assets/imgs/constancias/google/competenciasDigitales.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de competenciasDigitales">
+            </label>
+                            <label class="pagination-picture_course introduccionWeb1" for="9">
+                <img src="assets/imgs/constancias/google/introduccionWeb1.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de introduccionWeb1">
+            </label>
+                            <label class="pagination-picture_course introduccionWeb2" for="10">
+                <img src="assets/imgs/constancias/google/introduccionWeb1.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de introduccionWeb2">
+            </label>
+                            <label class="pagination-picture_course productividadPersonal" for="11">
+                <img src="assets/imgs/constancias/google/productividadPersonal.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de productividadPersonal">
+            </label>
+                            <label class="pagination-picture_course transDigital" for="12">
+                <img src="assets/imgs/constancias/google/transDigital.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de trasnformación transDigital">
+            </label>
+                            <label class="pagination-picture_course basicoJS" for="13">
+                <img src="assets/imgs/constancias/platzi/basicoJS.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de basicoJavaScript">
+            </label>
+                            <label class="pagination-picture_course frontendDeveloper" for="14">
+                <img src="assets/imgs/constancias/platzi/frontendDeveloper.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de frontendDeveloper">
+            </label>
+                            <label class="pagination-picture_course gitGithub" for="15">
+                <img src="assets/imgs/constancias/platzi/gitGithub.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de gitGithub">
+            </label>
+                            <label class="pagination-picture_course marcaPersonal" for="16">
+                <img src="assets/imgs/constancias/platzi/marcaPersonal.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de marcaPersonal">
+            </label>
+                            <label class="pagination-picture_course prework" for="17">
+                <img src="assets/imgs/constancias/platzi/prework.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de prework">
+            </label>
+                            <label class="pagination-picture_course responsiveDesign" for="18">
+                <img src="assets/imgs/constancias/platzi/responsiveDesign.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de responsiveDesign">
+            </label>
+                            <label class="pagination-picture_course definitivoHtml" for="19">
+                <img src="assets/imgs/constancias/platzi/definitivoHtml.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de definitivoHtml">
+            </label>
+                            <label class="pagination-picture_course fundamentosJS" for="17">
+                <img src="assets/imgs/constancias/platzi/fundamentosJS.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de fundamentosJS">
+            </label>
+                            <label class="pagination-picture_course introWeb" for="18">
+                <img src="assets/imgs/constancias/platzi/introWeb.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de introWeb de platzi">
+            </label>
+                            <label class="pagination-picture_course practicoHtml" for="19">
+                <img src="assets/imgs/constancias/platzi/practicoHtml.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de practico Html y Css">
+            </label>
+                            <label class="pagination-picture_course programacionBasica" for="19">
+                <img src="assets/imgs/constancias/platzi/programacionBasica.JPG" alt="curso aprobado por Carlos Arturo Miranda Trujano de programacionBasica">
+            </label>
+                        </div>
+                    </section>
 
                     <h3>Fotos</h3>
-
-                    <div class="pagination1">
-                        <label class="pagination-picture_course arturGraduado2" for="20">
+                    <section>
+                        <label class="pagination1">
+                            <label class="pagination-picture_course arturGraduado2" for="20">
                                 <img src="assets/imgs/artur/arturGraduado2.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                            </label>
                         <label class="pagination-picture_course arturFamilia1" for="21">
                                 <img src="assets/imgs/artur/arturFamilia1.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                            </label>
                         <label class="pagination-picture_course arturFamilia0" for="22">
                                 <img src="assets/imgs/artur/arturFamilia0.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                            </label>
                         <label class="pagination-picture_course arturFamilia2" for="23">
-                            <img src="assets/imgs/artur/arturFamilia2.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturFamilia2.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturFamilia3" for="24">
-                            <img src="assets/imgs/artur/arturFamilia3.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturFamilia3.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos" for="26">
-                            <img src="assets/imgs/artur/arturAmigos.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturCiclista0" for="27">
-                            <img src="assets/imgs/artur/arturCiclista0.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturCiclista0.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos0" for="28">
-                            <img src="assets/imgs/artur/arturAmigos0.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos0.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturCiclista2" for="29">
-                            <img src="assets/imgs/artur/arturCiclista2.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturCiclista2.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturCiclista1" for="30">
-                            <img src="assets/imgs/artur/arturCiclista1.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturCiclista1.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturCiclista" for="31">
-                            <img src="assets/imgs/artur/arturCiclista.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturCiclista.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturGraduado" for="32">
-                            <img src="assets/imgs/artur/arturGraduado.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturGraduado.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturGraduado1" for="33">
-                            <img src="assets/imgs/artur/arturGraduado1.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturGraduado1.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturGraduado0" for="34">
-                            <img src="assets/imgs/artur/arturGraduado0.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturGraduado0.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturFamilia" for="35">
-                            <img src="assets/imgs/artur/arturFamilia.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturFamilia.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturFamilia5" for="36">
-                            <img src="assets/imgs/artur/arturFamilia5.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturFamilia5.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturFamilia4" for="37">
-                            <img src="assets/imgs/artur/arturFamilia4.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturFamilia4.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course artur" for="38">
-                            <img src="assets/imgs/artur/artur.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/artur.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos1" for="39">
-                            <img src="assets/imgs/artur/arturAmigos1.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos1.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos2" for="40">
-                            <img src="assets/imgs/artur/arturAmigos2.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos2.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos3" for="41">
-                            <img src="assets/imgs/artur/arturAmigos3.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos3.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos5" for="42">
-                            <img src="assets/imgs/artur/arturAmigos5.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos5.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturPonente" for="43">
-                            <img src="assets/imgs/artur/arturPonente.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturPonente.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturSombrero" for="44">
-                            <img src="assets/imgs/artur/arturSombrero.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturSombrero.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos9" for="45">
-                            <img src="assets/imgs/artur/arturAmigos9.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos9.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos6" for="46">
-                            <img src="assets/imgs/artur/arturAmigos6.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos6.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos7" for="47">
-                            <img src="assets/imgs/artur/arturAmigos7.jpg" alt="foto de Carlos Arturo Miranda Trujano">
-                        </label>
+                                <img src="assets/imgs/artur/arturAmigos7.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         <label class="pagination-picture_course arturAmigos8" for="48">
-                            <img src="assets/imgs/artur/arturAmigos8.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                                <img src="assets/imgs/artur/arturAmigos8.jpg" alt="foto de Carlos Arturo Miranda Trujano">
+                            </label>
                         </label>
+                    </section>
 
-                    </div>
-                </div>
+                </aside>
             </article>
         </section>
 
@@ -275,6 +276,7 @@
 </body>
 <script src="js/theme.js "></script>
 <script src="js/toggle.js "></script>
+<!-- <script src="js/snapping.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js " crossorigin="anonymous " aria-label="Dark Theme "></script>
 

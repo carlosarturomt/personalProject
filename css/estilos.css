@@ -668,7 +668,7 @@ body.dark .skills-detail-container1 {
 }
 
 .skills-scroll--table1 img {
-  width: 50%;
+  width: 60px;
   margin-left: 10px !important;
 }
 
@@ -681,22 +681,22 @@ body.dark .skills-detail-container1 {
 
 .skills-scroll--table12 {
   justify-content: space-between;
-  width: 85%;
+  width: 40%;
   min-width: 100px;
   max-width: 800px;
   order: 1;
   border: 0.5px solid #22bced;
-  border-radius: 10px;
-  max-height: 350px;
+  height: auto;
   overflow: scroll;
   overflow-x: hidden;
   margin: 0 auto;
   margin-top: 1.5rem;
-  padding-left: 40px;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  color: #00090c;
   background-color: transparent;
+  border-radius: 10px;
+  padding-left: 40px;
+  color: #00090c;
 }
 
 .skills-scroll--table12:hover {
@@ -707,9 +707,10 @@ body.dark .skills-scroll--table12 {
   color: #FEFEFE;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .skills-scroll--table12 {
-    font-size: 1.2rem;
+    width: 85%;
+    font-size: 1.3rem;
   }
 }
 
@@ -720,14 +721,14 @@ body.dark .skills-scroll--table12 {
 }
 
 .skills-scroll--table12 img {
-  width: 55px;
-  margin-left: 0px;
+  width: 60px;
+  margin-left: 0px !important;
 }
 
 @media screen and (max-width: 450px) {
   .skills-scroll--table12 img {
-    width: 40px;
-    margin-left: -35px;
+    width: 60px;
+    margin-left: -20px !important;
   }
 }
 
@@ -1772,7 +1773,7 @@ body.dark .skills-detail-container:hover h3 {
   overflow: scroll;
   overflow-x: hidden;
   margin: 0 auto;
-  padding-left: 40px;
+  padding-left: 5px;
   font-size: 0.8rem;
   background-color: transparent;
 }
@@ -1797,7 +1798,14 @@ body.dark .skills-detail-container:hover h3 {
   }
   .skills-scroll--table:hover img {
     width: 40px;
-    margin-left: -40px;
+    margin-left: -10px;
+  }
+}
+
+@media screen and (min-width: 363px) {
+  .skills-scroll--table img {
+    width: 70px !important;
+    margin-left: -10px !important;
   }
 }
 
@@ -1808,7 +1816,7 @@ body.dark .skills-detail-container:hover h3 {
 
 .skills-scroll--table img {
   width: 40px;
-  margin-left: -40px;
+  margin-left: -10px;
 }
 
 .border {
